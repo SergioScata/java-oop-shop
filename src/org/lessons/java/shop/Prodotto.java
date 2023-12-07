@@ -14,7 +14,7 @@ import java.util.Random;
         //COSTRUTTORI
 
         public Prodotto( String name, String description, double price, int iva)throws IllegalArgumentException {
-           if(name == null){throw new IllegalArgumentException("Insert a valid name");}
+           if(name == null || name.isEmpty()){throw new IllegalArgumentException("Insert a valid name");}
             if(price< 0){throw new IllegalArgumentException("Insert a valid name");}
             if(iva< 0){throw new IllegalArgumentException("Insert a valid name");}
             this.code = code;
